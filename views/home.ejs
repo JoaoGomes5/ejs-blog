@@ -3,5 +3,12 @@
 <h1>Home</h1>
 
 <p><%= content %> </p>
+<% posts.forEach(post => { %>
 
-<%- include("layouts/footer") -%> 
+    <h2 class="l-bigger"><%= post.title %> </h2>
+    <p>
+        <%= post.content.substring(0, 100) + " ... "%>
+        <a href="/posts/:<%= post.title %>">Ler Mais</a>
+     </p>
+
+<% }) %>

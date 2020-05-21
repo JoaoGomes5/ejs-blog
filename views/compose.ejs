@@ -2,6 +2,21 @@
 <%- include("layouts/header") -%> 
 
 <h1>Compose</h1>
+<div class="container">
 
+  <form class="form" action="/compose" method="POST"> 
 
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="l-bigger"">Titulo</label>
+      <input type="text" class="form-control" name="title">
+    </div>
+     <div class="form-group">
+      <label for="post">Post</label>
+      <textarea class="form-control" name="post" rows="6"></textarea>
+    </div> 
+   
+    <button type="submit" class="btn  btn-primary">Publicar</button>
+  </form>
+  
+</div>
 <%- include("layouts/footer") -%> 
